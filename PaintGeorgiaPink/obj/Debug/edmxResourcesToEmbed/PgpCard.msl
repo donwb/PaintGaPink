@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PgpModelStoreContainer" CdmEntityContainer="PgpEntities">
+    <EntitySetMapping Name="Cards">
+      <EntityTypeMapping TypeName="PgpModel.Card">
+        <MappingFragment StoreEntitySet="Card">
+          <ScalarProperty Name="IsSent" ColumnName="IsSent" />
+          <ScalarProperty Name="CardId" ColumnName="CardId" />
+          <ScalarProperty Name="CardStyleId" ColumnName="CardStyleId" />
+          <ScalarProperty Name="SenderName" ColumnName="SenderName" />
+          <ScalarProperty Name="SenderEmail" ColumnName="SenderEmail" />
+          <ScalarProperty Name="RecipientName" ColumnName="RecipientName" />
+          <ScalarProperty Name="RecipientEmail" ColumnName="RecipientEmail" />
+          <ScalarProperty Name="Greeting" ColumnName="Greeting" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CardStyles">
+      <EntityTypeMapping TypeName="PgpModel.CardStyle">
+        <MappingFragment StoreEntitySet="CardStyle">
+          <ScalarProperty Name="CardStyleId" ColumnName="CardStyleId" />
+          <ScalarProperty Name="CardName" ColumnName="CardName" />
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProcessedCards">
+      <EntityTypeMapping TypeName="PgpModel.ProcessedCard">
+        <MappingFragment StoreEntitySet="ProcessedCard">
+          <ScalarProperty Name="Processed" ColumnName="Processed" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="RawData" ColumnName="RawData" />
+          <ScalarProperty Name="ProcessedCardId" ColumnName="ProcessedCardId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MailSettings">
+      <EntityTypeMapping TypeName="PgpModel.MailSetting">
+        <MappingFragment StoreEntitySet="MailSettings">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="EmailAccountPassword" ColumnName="EmailAccountPassword" />
+          <ScalarProperty Name="EmailAccountName" ColumnName="EmailAccountName" />
+          <ScalarProperty Name="PickupURL" ColumnName="PickupURL" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="SmtpServer" ColumnName="SmtpServer" />
+          <ScalarProperty Name="CC" ColumnName="CC" />
+          <ScalarProperty Name="FromEmail" ColumnName="FromEmail" />
+          <ScalarProperty Name="FromName" ColumnName="FromName" />
+          <ScalarProperty Name="MailSettingsId" ColumnName="MailSettingsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CardShippingInfoes">
+      <EntityTypeMapping TypeName="PgpModel.CardShippingInfo">
+        <MappingFragment StoreEntitySet="CardShippingInfo">
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CardId" ColumnName="CardId" />
+          <ScalarProperty Name="CardShippingInfoId" ColumnName="CardShippingInfoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

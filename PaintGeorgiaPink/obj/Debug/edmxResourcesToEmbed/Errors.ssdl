@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ErrorLogModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ErrorLogModelStoreContainer">
+    <EntitySet Name="ErrorLog" EntityType="ErrorLogModel.Store.ErrorLog" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="ErrorId" />
+    </Key>
+    <Property Name="ErrorId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ErrorLevel" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="CustomMessage" Type="varchar(max)" />
+    <Property Name="ErrorDate" Type="datetime" Nullable="false" />
+    <Property Name="Message" Type="varchar" MaxLength="500" />
+    <Property Name="StackTrace" Type="varchar(max)" />
+    <Property Name="Source" Type="varchar(max)" />
+    <Property Name="Data" Type="varchar(max)" />
+    <Property Name="TargetSite" Type="varchar" MaxLength="500" />
+  </EntityType>
+</Schema>

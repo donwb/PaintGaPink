@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="PgpModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="PgpModelStoreContainer">
+          <EntitySet Name="Card" EntityType="PgpModel.Store.Card" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CardShippingInfo" EntityType="PgpModel.Store.CardShippingInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CardStyle" EntityType="PgpModel.Store.CardStyle" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MailSettings" EntityType="PgpModel.Store.MailSettings" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProcessedCard" EntityType="PgpModel.Store.ProcessedCard" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Card_CardStyle" Association="PgpModel.Store.FK_Card_CardStyle">
+            <End Role="CardStyle" EntitySet="CardStyle" />
+            <End Role="Card" EntitySet="Card" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CardShippingInfo_Card" Association="PgpModel.Store.FK_CardShippingInfo_Card">
+            <End Role="Card" EntitySet="Card" />
+            <End Role="CardShippingInfo" EntitySet="CardShippingInfo" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Card">
+          <Key>
+            <PropertyRef Name="CardId" />
+          </Key>
+          <Property Name="CardId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CardStyleId" Type="int" Nullable="false" />
+          <Property Name="SenderName" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="SenderEmail" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="RecipientName" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="RecipientEmail" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="Greeting" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Message" Type="varchar" Nullable="false" MaxLength="1000" />
+          <Property Name="IsSent" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CardShippingInfo">
+          <Key>
+            <PropertyRef Name="CardShippingInfoId" />
+          </Key>
+          <Property Name="CardShippingInfoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CardId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="Address1" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="Address2" Type="varchar" MaxLength="200" />
+          <Property Name="City" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="State" Type="varchar" Nullable="false" MaxLength="2" />
+          <Property Name="Zip" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CardStyle">
+          <Key>
+            <PropertyRef Name="CardStyleId" />
+          </Key>
+          <Property Name="CardStyleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CardName" Type="varchar" Nullable="false" MaxLength="1000" />
+          <Property Name="ImageUrl" Type="varchar" Nullable="false" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="MailSettings">
+          <Key>
+            <PropertyRef Name="MailSettingsId" />
+          </Key>
+          <Property Name="MailSettingsId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FromName" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="FromEmail" Type="varchar" Nullable="false" MaxLength="300" />
+          <Property Name="CC" Type="varchar" MaxLength="500" />
+          <Property Name="SmtpServer" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Subject" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="Body" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="PickupURL" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="EmailAccountName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="EmailAccountPassword" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Port" Type="int" Nullable="false" />
+          <Property Name="Active" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProcessedCard">
+          <Key>
+            <PropertyRef Name="ProcessedCardId" />
+          </Key>
+          <Property Name="ProcessedCardId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="RawData" Type="varchar(max)" Nullable="false" />
+          <Property Name="Serial" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="Processed" Type="bit" />
+        </EntityType>
+        <Association Name="FK_Card_CardStyle">
+          <End Role="CardStyle" Type="PgpModel.Store.CardStyle" Multiplicity="1" />
+          <End Role="Card" Type="PgpModel.Store.Card" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CardStyle">
+              <PropertyRef Name="CardStyleId" />
+            </Principal>
+            <Dependent Role="Card">
+              <PropertyRef Name="CardStyleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CardShippingInfo_Card">
+          <End Role="Card" Type="PgpModel.Store.Card" Multiplicity="1" />
+          <End Role="CardShippingInfo" Type="PgpModel.Store.CardShippingInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Card">
+              <PropertyRef Name="CardId" />
+            </Principal>
+            <Dependent Role="CardShippingInfo">
+              <PropertyRef Name="CardId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PgpModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="PgpEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cards" EntityType="PgpModel.Card" />
+          <EntitySet Name="CardStyles" EntityType="PgpModel.CardStyle" />
+          <AssociationSet Name="FK_Card_CardStyle" Association="PgpModel.FK_Card_CardStyle">
+            <End Role="CardStyle" EntitySet="CardStyles" />
+            <End Role="Card" EntitySet="Cards" />
+          </AssociationSet>
+          <EntitySet Name="ProcessedCards" EntityType="PgpModel.ProcessedCard" />
+          <EntitySet Name="MailSettings" EntityType="PgpModel.MailSetting" />
+          <EntitySet Name="CardShippingInfoes" EntityType="PgpModel.CardShippingInfo" />
+          <AssociationSet Name="FK_CardShippingInfo_Card" Association="PgpModel.FK_CardShippingInfo_Card">
+            <End Role="Card" EntitySet="Cards" />
+            <End Role="CardShippingInfo" EntitySet="CardShippingInfoes" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Card">
+          <Key>
+            <PropertyRef Name="CardId" />
+          </Key>
+          <Property Name="CardId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CardStyleId" Type="Int32" Nullable="false" />
+          <Property Name="SenderName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="SenderEmail" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="RecipientName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="RecipientEmail" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Greeting" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Message" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="CardStyle" Relationship="PgpModel.FK_Card_CardStyle" FromRole="Card" ToRole="CardStyle" />
+          <Property Type="Boolean" Name="IsSent" Nullable="false" />
+          <NavigationProperty Name="CardShippingInfoes" Relationship="PgpModel.FK_CardShippingInfo_Card" FromRole="Card" ToRole="CardShippingInfo" />
+        </EntityType>
+        <EntityType Name="CardStyle">
+          <Key>
+            <PropertyRef Name="CardStyleId" />
+          </Key>
+          <Property Name="CardStyleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CardName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ImageUrl" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Cards" Relationship="PgpModel.FK_Card_CardStyle" FromRole="CardStyle" ToRole="Card" />
+        </EntityType>
+        <Association Name="FK_Card_CardStyle">
+          <End Role="CardStyle" Type="PgpModel.CardStyle" Multiplicity="1" />
+          <End Role="Card" Type="PgpModel.Card" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CardStyle">
+              <PropertyRef Name="CardStyleId" />
+            </Principal>
+            <Dependent Role="Card">
+              <PropertyRef Name="CardStyleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ProcessedCard">
+          <Key>
+            <PropertyRef Name="ProcessedCardId" />
+          </Key>
+          <Property Type="Int32" Name="ProcessedCardId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="RawData" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Serial" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Processed" />
+        </EntityType>
+        <EntityType Name="MailSetting">
+          <Key>
+            <PropertyRef Name="MailSettingsId" />
+          </Key>
+          <Property Type="Int32" Name="MailSettingsId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FromName" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FromEmail" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CC" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SmtpServer" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Subject" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Body" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PickupURL" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EmailAccountName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="EmailAccountPassword" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Port" Nullable="false" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CardShippingInfo">
+          <Key>
+            <PropertyRef Name="CardShippingInfoId" />
+          </Key>
+          <Property Type="Int32" Name="CardShippingInfoId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="CardId" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Address1" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Address2" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="State" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Zip" Nullable="false" />
+          <NavigationProperty Name="Card" Relationship="PgpModel.FK_CardShippingInfo_Card" FromRole="CardShippingInfo" ToRole="Card" />
+        </EntityType>
+        <Association Name="FK_CardShippingInfo_Card">
+          <End Type="PgpModel.Card" Role="Card" Multiplicity="1" />
+          <End Type="PgpModel.CardShippingInfo" Role="CardShippingInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Card">
+              <PropertyRef Name="CardId" />
+            </Principal>
+            <Dependent Role="CardShippingInfo">
+              <PropertyRef Name="CardId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PgpModelStoreContainer" CdmEntityContainer="PgpEntities">
+          <EntitySetMapping Name="Cards"><EntityTypeMapping TypeName="PgpModel.Card"><MappingFragment StoreEntitySet="Card">
+            <ScalarProperty Name="IsSent" ColumnName="IsSent" />
+                <ScalarProperty Name="CardId" ColumnName="CardId" />
+            <ScalarProperty Name="CardStyleId" ColumnName="CardStyleId" />
+            <ScalarProperty Name="SenderName" ColumnName="SenderName" />
+            <ScalarProperty Name="SenderEmail" ColumnName="SenderEmail" />
+            <ScalarProperty Name="RecipientName" ColumnName="RecipientName" />
+            <ScalarProperty Name="RecipientEmail" ColumnName="RecipientEmail" />
+            <ScalarProperty Name="Greeting" ColumnName="Greeting" />
+            <ScalarProperty Name="Message" ColumnName="Message" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="CardStyles"><EntityTypeMapping TypeName="PgpModel.CardStyle"><MappingFragment StoreEntitySet="CardStyle">
+            <ScalarProperty Name="CardStyleId" ColumnName="CardStyleId" />
+            <ScalarProperty Name="CardName" ColumnName="CardName" />
+            <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="ProcessedCards">
+            <EntityTypeMapping TypeName="PgpModel.ProcessedCard">
+              <MappingFragment StoreEntitySet="ProcessedCard">
+                <ScalarProperty Name="Processed" ColumnName="Processed" />
+                <ScalarProperty Name="Serial" ColumnName="Serial" />
+                <ScalarProperty Name="RawData" ColumnName="RawData" />
+                <ScalarProperty Name="ProcessedCardId" ColumnName="ProcessedCardId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MailSettings">
+            <EntityTypeMapping TypeName="PgpModel.MailSetting">
+              <MappingFragment StoreEntitySet="MailSettings">
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Port" ColumnName="Port" />
+                <ScalarProperty Name="EmailAccountPassword" ColumnName="EmailAccountPassword" />
+                <ScalarProperty Name="EmailAccountName" ColumnName="EmailAccountName" />
+                <ScalarProperty Name="PickupURL" ColumnName="PickupURL" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="SmtpServer" ColumnName="SmtpServer" />
+                <ScalarProperty Name="CC" ColumnName="CC" />
+                <ScalarProperty Name="FromEmail" ColumnName="FromEmail" />
+                <ScalarProperty Name="FromName" ColumnName="FromName" />
+                <ScalarProperty Name="MailSettingsId" ColumnName="MailSettingsId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CardShippingInfoes">
+            <EntityTypeMapping TypeName="PgpModel.CardShippingInfo">
+              <MappingFragment StoreEntitySet="CardShippingInfo">
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="CardId" ColumnName="CardId" />
+                <ScalarProperty Name="CardShippingInfoId" ColumnName="CardShippingInfoId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="PgpCard">
+        <EntityTypeShape EntityType="PgpModel.Card" Width="1.5" PointX="3" PointY="1" Height="2.9417936197916665" IsExpanded="true" />
+        <EntityTypeShape EntityType="PgpModel.CardStyle" Width="1.5" PointX="0.75" PointY="1.5" Height="1.7879850260416674" IsExpanded="true" />
+        <AssociationConnector Association="PgpModel.FK_Card_CardStyle" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.3939925130208337" />
+          <ConnectorPoint PointX="3" PointY="2.3939925130208337" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="PgpModel.ProcessedCard" Width="1.5" PointX="5.875" PointY="1.25" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="PgpModel.MailSetting" Width="1.5" PointX="0.75" PointY="4.75" Height="2.5571907552083335" />
+        <EntityTypeShape EntityType="PgpModel.CardShippingInfo" Width="1.5" PointX="5.25" PointY="4.25" Height="2.7494921874999996" />
+        <AssociationConnector Association="PgpModel.FK_CardShippingInfo_Card" >
+          <ConnectorPoint PointX="4.5" PointY="3.6172900390625" />
+          <ConnectorPoint PointX="5.53125" PointY="3.6172900390625" />
+          <ConnectorPoint PointX="5.53125" PointY="4.25" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

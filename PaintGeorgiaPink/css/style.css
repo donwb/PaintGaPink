@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+}
+
+
+body	{background: url(../images/background.jpg) repeat-x #dd98c7;
+		font-family: 'Droid+Sans', arial, serif; 
+		/*font-family:Verdana, Geneva, sans-serif;*/
+		height: 1200px;
+}
+
+
+#nav {
+    font-size:16px;
+	position: relative;
+	top:22px;
+	width: 575px;
+	height:50px;
+	padding-top:18px;
+	margin: 0;
+	margin-left:280px;
+}
+
+#nav li {
+    list-style:none;
+	float: left;
+	text-align: center;
+}
+
+#nav  span {
+	width: 200px;
+	height: 200px;
+}
+
+#nav a {
+    text-decoration:none;
+	color:#3e3c35;
+	margin:0 35px;
+	padding: 25px 1px; 
+	width: 100px;
+	height: 50px;
+	padding: 15px 15px 15px 15px;
+}
+
+#nav  a:visited{
+    color:#000;
+}
+#nav  a:hover {
+	/* background: url(../images/navsplash.png) -2px no-repeat; */
+}
+#nav li a:active {
+    color:#000;
+}
+
+.status { 
+	color:#000;
+	/* background:url(../images/navsplash.png) -2px -5px no-repeat; */
+	width: 70px;
+	height: 50px;
+	
+}
+
+.status1 { 
+	color:#000;
+	/* background:url(../images/navsplash.png) -2px -5px no-repeat; */
+	width: 125px;
+	height: 50px;
+	margin-top:-3px;
+}
+
+
+#wrapper {width: 960px;
+			margin: 50px auto;
+	}
+
+#header	{height: 95px;
+			background: url(../images/navbg.jpg) repeat-x #cfa2c6;
+	}
+			
+#logo {width: 300px;
+	float: left;
+	margin-left: 100px;
+
+}
+
+
+#disclaimer {width: 275px;
+			float: left;
+			margin-top: 100px;
+			font-size:18px;
+			line-height: 1.3em;
+}
+
+#disclaimer a {text-decoration:none;
+				color: #000000;
+}
+
+
+#disclaimer a:hover {text-decoration:underline;
+}
+
+
+
+#content	{height: 275px;	
+			margin: 50px auto;
+}
+
+
+#cards	{width: 960px;
+		height: 275px;
+}
+
+#cards	li {display: inline;
+			list-style:none;
+}
+
+#main	{width: 960px;
+		height: 400px;
+}
+
+
+#main	{width: 960px;
+		height: 400px;
+		
+}
+
+#main a	{text-decoration: none;
+		color: #000000;
+}
+
+#main a:hover {text-decoration:underline;
+}
+	
+	
+span1	{color:#df4f99;
+		font-weight:bolder;
+}
+
+h1	{color:#df4f99;
+	font-size:34px;
+	font-weight:bolder;
+	width: 335px;
+	margin-bottom: 20px;
+	font-family: 'Yanone', arial, serif; 
+}
+
+
+.paragraph	{float: left;
+			width: 430px;
+			line-height: 1.5;
+			font-size:16px;
+			margin:20px;
+			font-family:Tahoma;
+}
+	
+	
+.paragraph2	{
+			width: 430px;
+			line-height: 1.5;
+			position: relative;
+			left: 568px;
+			top: -140px;
+			font-size:18px;
+}
+
+#prayingcard	{
+				width: 375px;
+				height: 250px;
+				position: relative;
+				top: -350px;
+				left: 500px;
+}
+
+p	{margin-bottom: 20px;
+}
+
+.right	{float: right;
+}
+
+#footer	{
+	background-color: #a5ac80;
+	clear:both;
+	position:relative;
+	margin-top:20px;
+	padding-top:10px;
+	height: 47px;
+	width:100%;
+	text-align:center;
+	font-size:10px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+#footer a, #footer-about a, #footer-send a {text-decoration:none;
+			color: #000000;
+}
+
+#footer a:hover, #footer-about a:hover, #footer-send a:hover {text-decoration:underline;
+}
+
+#footer-about	{
+	background-color: #a5ac80;
+	clear:both;
+	position:relative;
+	top: 200px;
+	margin-top:20px;
+	padding-top:10px;
+	height: 47px;
+	width:100%;
+	text-align:center;
+	font-size:10px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+#footer-send	{
+	background-color: #a5ac80;
+	clear:both;
+	position:relative;
+	top: 250px;
+	margin-top:20px;
+	padding-top:10px;
+	height: 47px;
+	width:100%;
+	text-align:center;
+	font-size:10px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+#footer img, #footer-about img, #footer-send img	{position: relative;
+			top: 10px;
+}
+
+
+.individualCards
+{
+    margin: 20, 20, 20, 20;
+    border-style:inset;
+    border-width:3px;
+}

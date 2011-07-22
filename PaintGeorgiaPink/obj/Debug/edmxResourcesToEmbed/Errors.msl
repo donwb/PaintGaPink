@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ErrorLogModelStoreContainer" CdmEntityContainer="ErrorEdm">
+    <EntitySetMapping Name="ErrorLogs">
+      <EntityTypeMapping TypeName="ErrorLogModel.ErrorLog">
+        <MappingFragment StoreEntitySet="ErrorLog">
+          <ScalarProperty Name="CustomMessage" ColumnName="CustomMessage" />
+          <ScalarProperty Name="ErrorDate" ColumnName="ErrorDate" />
+          <ScalarProperty Name="ErrorLevel" ColumnName="ErrorLevel" />
+          <ScalarProperty Name="TargetSite" ColumnName="TargetSite" />
+          <ScalarProperty Name="ErrorId" ColumnName="ErrorId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

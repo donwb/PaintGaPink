@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="PaintGeorgiaPink.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Pinked By Breast Friends</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'/>
+    <link href=' http://fonts.googleapis.com/css?family=Yanone' rel='stylesheet' type='text/css'/>
+    
+    <!-- Sandbox Merchant ID == 657947014316185 -->
+    <script  id='googlecart-script' type='text/javascript' src='https://checkout.google.com/seller/gsc/v2/cart.js?mid=657947014316185' integration='jscart-wizard' post-cart-to-sandbox='true' currency='USD'></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <img style="position:absolute; top: 125;left: 16px; margin-top:25px" src="images/logo.gif" width="243" height="112" alt="Breast Friends" />
+<!-- Header -->    
+    <div id="header">
+        
+        <ul id="nav">
+            <li class="status"><a style="margin-left:-20px" href="index.aspx">Home</a></li>
+            <li><a href="sendcard.aspx">Send A Card</a></li>
+            <li><a href="about.aspx">About</a></li>
+            <li><a href="https://www.breastfriends.org/donate_online.html" target="_blank">Donate</a></li>
+        </ul>
+         <div id="googlecart-widget-control" googlecart-widget-control-align="right"
+     style="font: 12px Tahoma, sans-serif; height:30px;position:absolute; top:40px; right: 30px;color: Black;">View Cart (<span id="googlecart-item-count"></span> - <span id="googlecart-subtotal"></span>)</div>
+
+    </div>
+    
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+<!-- End Header -->
+
+<!-- Footer -->
+    <div id="footer">
+
+        <p><a href="https://www.breastfriends.org"><img src="images/breastfriendslogosmall.jpg" alt=""/></a>&nbsp;&nbsp; &copy; 2010. 
+        <a href="https://www.breastfriends.org">Breast Friends, Inc.</a> All Rights Reserved.</p>
+
+    </div>
+<!-- End Footer -->
+</body>
+</html>

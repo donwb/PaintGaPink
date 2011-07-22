@@ -1,0 +1,2865 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="6319c7ba-a816-44d6-937b-c90e0cb00a11"
+  name="PGPModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction
+        Id="7606ae12-9deb-4ae6-9c20-f7d8a2ae7fe9"
+        name="UserCreateCard"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="c57bff60-ccd8-4a16-973c-2ff50cb2b3a8">
+            <body>User can proceed to checkout or create another card</body>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="4c587ae1-c9fe-433d-b868-0387b72a8b50"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="3634007c-4332-4097-ba30-92a9b4deee10"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="6729fb43-9e20-4565-844b-8aabfc015e0d"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="2d5256a7-34ab-4cc4-ae46-8b6cb7d98884"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3d15e4ac-9871-477a-9a0b-f36dbe606494"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d90d632d-557f-4db9-b48c-ec6e316ab2c9"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3d467f20-0d84-43ae-8ffa-383b0c694d4b"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="6729fb43-9e20-4565-844b-8aabfc015e0d"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6e2f0871-846b-485c-9eeb-43d3a5aef586"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2d5256a7-34ab-4cc4-ae46-8b6cb7d98884"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="308f02d4-1ef1-477c-8824-bbcbc06501fe"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="f69b85e5-32ec-475c-81aa-139c30cc34ff"
+                LastKnownName="User"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="5ce2dbfb-254c-40d3-bc9c-74be580cc3cf"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="4174d060-6e83-4968-a3c5-70b597484b30"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="c9b3d7c3-fecc-4d7e-90bc-3dbb78e7186c"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="952b0081-b5b0-46ae-8856-da11e9df4acc"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="62f5c639-e688-4d8f-bfa9-64e68efdbddb"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="412c9e60-3597-42bc-8731-8dacf836f5b1"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d684f631-dd1e-4590-9f98-09b9b234c9c7"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="c9b3d7c3-fecc-4d7e-90bc-3dbb78e7186c"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c66ab4db-5b20-44b4-bfe1-80c3f5f1e382"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3d15e4ac-9871-477a-9a0b-f36dbe606494"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="952b0081-b5b0-46ae-8856-da11e9df4acc"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="3f3fa4be-0bb0-4abd-a58b-9333f4a71f95"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="48150bd7-7ded-4e62-a359-8c9e0a2abd19"
+                LastKnownName="PGPDatabase"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="ae86b7bb-fa11-4f49-baef-abb29db05ea4"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ed3f5070-be2f-4083-b90b-dcfe3e6b56b1"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="5bd24924-7534-42b1-8813-dbfb81377425"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="94040ca2-3de4-4236-a5db-4f47da3c7198"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="ed3f5070-be2f-4083-b90b-dcfe3e6b56b1"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="47ddc417-f73f-4de3-9944-6408eca9dda7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="48150bd7-7ded-4e62-a359-8c9e0a2abd19"
+                LastKnownName="PGPDatabase"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5bd24924-7534-42b1-8813-dbfb81377425"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="48150bd7-7ded-4e62-a359-8c9e0a2abd19"
+                LastKnownName="PGPDatabase"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="62f5c639-e688-4d8f-bfa9-64e68efdbddb"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="94040ca2-3de4-4236-a5db-4f47da3c7198"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="48150bd7-7ded-4e62-a359-8c9e0a2abd19"
+                LastKnownName="PGPDatabase"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="412c9e60-3597-42bc-8731-8dacf836f5b1"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="ae86b7bb-fa11-4f49-baef-abb29db05ea4"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="068cb290-acd5-4d51-af5b-0263dea0ce3b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="48150bd7-7ded-4e62-a359-8c9e0a2abd19"
+                LastKnownName="PGPDatabase"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d684f631-dd1e-4590-9f98-09b9b234c9c7"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d90d632d-557f-4db9-b48c-ec6e316ab2c9"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="4174d060-6e83-4968-a3c5-70b597484b30"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8cbd231f-4859-45fb-bafb-7468b7f2f783"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0ddcf72d-44e7-4568-a846-4240d15d7e2f"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="f69b85e5-32ec-475c-81aa-139c30cc34ff"
+                LastKnownName="User"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3d467f20-0d84-43ae-8ffa-383b0c694d4b"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="3634007c-4332-4097-ba30-92a9b4deee10"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a51a1c32-5fba-49cd-978c-4c0c6ea29f18"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e4ba3679-e898-43f9-b520-94ae20afee28"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e3b96f85-acc5-4fa6-973e-b786ea303f0e"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="21a73157-1dc1-47ea-9f81-437df672094f"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="6fb43eb0-9fd7-4c80-8cce-18bd0deebd3f"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a7eaa6bb-22bf-4b2b-8456-f2687ea08b6e"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="dd926e0c-5f41-495e-ab64-407ca57370ab"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="08ceedff-9e0e-43d4-a0b4-38e7aeb50bbc"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="21a73157-1dc1-47ea-9f81-437df672094f"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="fbb355fd-dffb-4d50-aa63-af6458ecbd6b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6fb43eb0-9fd7-4c80-8cce-18bd0deebd3f"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="545a0b6f-8dc5-491c-9c34-b54c7a060f21"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="f69b85e5-32ec-475c-81aa-139c30cc34ff"
+                LastKnownName="User"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="dc909b76-3075-4d56-8ffe-758b1db9c78a"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="146c444b-6aa5-4d1d-9dbe-72c07627e921"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ecb8c4c5-7917-4bd1-97ac-14b29d2c3190"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="4fa6a6db-0890-423a-a6bc-f0e511f83415"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7f9be561-9389-46d9-9a9f-b6692ff2e61a"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ab9ca260-709a-4ec5-9f7f-07ab166a16a1"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d7a859b4-7cc7-46a5-ae6a-52a529b95e9f"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="ecb8c4c5-7917-4bd1-97ac-14b29d2c3190"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="cfaeb17c-488f-4b15-8e35-099b1c3b0d80"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4fa6a6db-0890-423a-a6bc-f0e511f83415"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a7eaa6bb-22bf-4b2b-8456-f2687ea08b6e"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="eeea6e8a-1919-4f17-9b15-af987dff42ea"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="48150bd7-7ded-4e62-a359-8c9e0a2abd19"
+                LastKnownName="PGPDatabase"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="dde8fa62-89f0-45c2-bb01-c7984f1e22c4"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a7e2ba41-4361-445e-89aa-c634329b0c23"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="4c02d3f1-88d4-44e8-b51d-e3c8dd133013"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="20c17a35-e726-4f27-bdfc-e93375b708b0"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a7e2ba41-4361-445e-89aa-c634329b0c23"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="333daf8d-aa50-4ca7-8696-c3d4e6ee0126"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="48150bd7-7ded-4e62-a359-8c9e0a2abd19"
+                LastKnownName="PGPDatabase"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4c02d3f1-88d4-44e8-b51d-e3c8dd133013"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="48150bd7-7ded-4e62-a359-8c9e0a2abd19"
+                LastKnownName="PGPDatabase"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7f9be561-9389-46d9-9a9f-b6692ff2e61a"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="20c17a35-e726-4f27-bdfc-e93375b708b0"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="48150bd7-7ded-4e62-a359-8c9e0a2abd19"
+                LastKnownName="PGPDatabase"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ab9ca260-709a-4ec5-9f7f-07ab166a16a1"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="dde8fa62-89f0-45c2-bb01-c7984f1e22c4"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0f26173c-ee0f-4118-923c-2e08d3b9bbe5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="48150bd7-7ded-4e62-a359-8c9e0a2abd19"
+                LastKnownName="PGPDatabase"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d7a859b4-7cc7-46a5-ae6a-52a529b95e9f"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dd926e0c-5f41-495e-ab64-407ca57370ab"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="146c444b-6aa5-4d1d-9dbe-72c07627e921"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ee31bf2c-4656-4f6b-bc88-6b581bb83fc8"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+                LastKnownName="PGPService"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="09e34c6b-7906-4fd4-a4be-179e0e553e95"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="f69b85e5-32ec-475c-81aa-139c30cc34ff"
+                LastKnownName="User"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="08ceedff-9e0e-43d4-a0b4-38e7aeb50bbc"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e3b96f85-acc5-4fa6-973e-b786ea303f0e"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e50e576e-5715-47e9-b42a-39f3ac9e7f78"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+                LastKnownName="PGPSite"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="b9d13e80-5d43-4e47-924a-0bf40c2ff2e5"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c7bb302d-66eb-4462-b1aa-d14bf1a55e06"
+                LastKnownName="Google Cart"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="689bbf7f-f6f1-4859-9900-15d70ea801e1"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="39836c61-fde7-4dce-9589-2f776378f70d"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="68cb7887-48c8-47d0-8698-81d8e58d137a"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7190d8fb-d9fe-4fb5-ad23-1eb62d46027f"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="39836c61-fde7-4dce-9589-2f776378f70d"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="baf872a2-52eb-420c-905c-c35d3ebf9318"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c7bb302d-66eb-4462-b1aa-d14bf1a55e06"
+                LastKnownName="Google Cart"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="68cb7887-48c8-47d0-8698-81d8e58d137a"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="c7bb302d-66eb-4462-b1aa-d14bf1a55e06"
+                LastKnownName="Google Cart"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a724e54d-90f2-4be3-a786-5cddf744a689"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="f69b85e5-32ec-475c-81aa-139c30cc34ff"
+                LastKnownName="User"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e48b25a6-0e32-4e66-ba35-10cbd1846dc1"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="f69b85e5-32ec-475c-81aa-139c30cc34ff"
+                LastKnownName="User"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7190d8fb-d9fe-4fb5-ad23-1eb62d46027f"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="c7bb302d-66eb-4462-b1aa-d14bf1a55e06"
+                LastKnownName="Google Cart"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="689bbf7f-f6f1-4859-9900-15d70ea801e1"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="87d69fef-bd22-4797-8b85-c66b8b22d506"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c7bb302d-66eb-4462-b1aa-d14bf1a55e06"
+                LastKnownName="Google Cart"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="fd6b0350-8fce-4b4e-b50c-6fe17358fc58"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c7bb302d-66eb-4462-b1aa-d14bf1a55e06"
+                LastKnownName="Google Cart"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="5b2a1f9f-83e5-4c4d-ac5e-f44a9b595264"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3bcb1f9d-0cdc-464f-900b-002b9beb1362"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="85038c69-5937-41cc-9863-e688a2d4b746"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b47db240-f2fc-41df-a2cd-9fb00dffcdf5"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3bcb1f9d-0cdc-464f-900b-002b9beb1362"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="424c2aef-cf61-4660-a77e-0b84ed59f68b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c7bb302d-66eb-4462-b1aa-d14bf1a55e06"
+                LastKnownName="Google Cart"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="98a19171-7375-4204-85c7-8631fc4cad4f"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="f69b85e5-32ec-475c-81aa-139c30cc34ff"
+                LastKnownName="User"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="85038c69-5937-41cc-9863-e688a2d4b746"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="c7bb302d-66eb-4462-b1aa-d14bf1a55e06"
+                LastKnownName="Google Cart"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b47db240-f2fc-41df-a2cd-9fb00dffcdf5"
+            name="MessageOccurrenceSpecification31">
+            <covered>
+              <lifelineMoniker
+                Id="c7bb302d-66eb-4462-b1aa-d14bf1a55e06"
+                LastKnownName="Google Cart"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="80894568-4ab2-43d3-8cc7-278277502904"
+            name="MessageOccurrenceSpecification32">
+            <covered>
+              <lifelineMoniker
+                Id="f69b85e5-32ec-475c-81aa-139c30cc34ff"
+                LastKnownName="User"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="5b2a1f9f-83e5-4c4d-ac5e-f44a9b595264"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="19ef2490-da25-40c0-b6c1-c7337854495d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c7bb302d-66eb-4462-b1aa-d14bf1a55e06"
+                LastKnownName="Google Cart"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="f69b85e5-32ec-475c-81aa-139c30cc34ff"
+            name="User"
+            isActor="true"
+            lifelineDisplayName="User">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="308f02d4-1ef1-477c-8824-bbcbc06501fe"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="0ddcf72d-44e7-4568-a846-4240d15d7e2f"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="545a0b6f-8dc5-491c-9c34-b54c7a060f21"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="09e34c6b-7906-4fd4-a4be-179e0e553e95"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a724e54d-90f2-4be3-a786-5cddf744a689"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e48b25a6-0e32-4e66-ba35-10cbd1846dc1"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="98a19171-7375-4204-85c7-8631fc4cad4f"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="80894568-4ab2-43d3-8cc7-278277502904"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="9d46dcd7-986f-41cc-9d6c-37b167901336"
+            name="PGPSite"
+            isActor="false"
+            lifelineDisplayName="PGPSite">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="6729fb43-9e20-4565-844b-8aabfc015e0d"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3634007c-4332-4097-ba30-92a9b4deee10"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="21a73157-1dc1-47ea-9f81-437df672094f"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e3b96f85-acc5-4fa6-973e-b786ea303f0e"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="f4a26aa7-c587-49f8-9710-791028dde92f"
+            name="PGPService"
+            isActor="false"
+            lifelineDisplayName="PGPService">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="c9b3d7c3-fecc-4d7e-90bc-3dbb78e7186c"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="4174d060-6e83-4968-a3c5-70b597484b30"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ecb8c4c5-7917-4bd1-97ac-14b29d2c3190"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="146c444b-6aa5-4d1d-9dbe-72c07627e921"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="48150bd7-7ded-4e62-a359-8c9e0a2abd19"
+            name="PGPDatabase"
+            isActor="false"
+            lifelineDisplayName="PGPDatabase">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="ed3f5070-be2f-4083-b90b-dcfe3e6b56b1"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ae86b7bb-fa11-4f49-baef-abb29db05ea4"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a7e2ba41-4361-445e-89aa-c634329b0c23"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="dde8fa62-89f0-45c2-bb01-c7984f1e22c4"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="c7bb302d-66eb-4462-b1aa-d14bf1a55e06"
+            name="Google Cart"
+            isActor="false"
+            lifelineDisplayName="Google Cart">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="39836c61-fde7-4dce-9589-2f776378f70d"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="689bbf7f-f6f1-4859-9900-15d70ea801e1"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3bcb1f9d-0cdc-464f-900b-002b9beb1362"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5b2a1f9f-83e5-4c4d-ac5e-f44a9b595264"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="9d7ee10a-67b5-4b98-bdd5-1960a149f9da"
+            name="Create Card"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="308f02d4-1ef1-477c-8824-bbcbc06501fe"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2d5256a7-34ab-4cc4-ae46-8b6cb7d98884"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="07d6ef85-c1b3-4f8f-b856-3b0a11a703a1"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3d467f20-0d84-43ae-8ffa-383b0c694d4b"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0ddcf72d-44e7-4568-a846-4240d15d7e2f"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e3f99e33-49c2-41c9-90be-af2e567f2ed1"
+            name="Preview Card"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="545a0b6f-8dc5-491c-9c34-b54c7a060f21"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6fb43eb0-9fd7-4c80-8cce-18bd0deebd3f"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="7207d51a-da7f-4db7-aacf-7943162aa08e"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="08ceedff-9e0e-43d4-a0b4-38e7aeb50bbc"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="09e34c6b-7906-4fd4-a4be-179e0e553e95"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="b9b4cb29-81d0-41d7-853a-9fbac78d817b"
+            name="Card Data"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3d15e4ac-9871-477a-9a0b-f36dbe606494"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="952b0081-b5b0-46ae-8856-da11e9df4acc"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="0f45e0ce-6cb6-454f-8004-13d5c1f081c8"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d684f631-dd1e-4590-9f98-09b9b234c9c7"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d90d632d-557f-4db9-b48c-ec6e316ab2c9"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="633cfaa4-bf3f-418a-abaa-60efeb081f13"
+            name="Persist Card Info"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="62f5c639-e688-4d8f-bfa9-64e68efdbddb"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5bd24924-7534-42b1-8813-dbfb81377425"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="69c836f7-fb9e-4d83-bd8c-84a8d526c16a"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="94040ca2-3de4-4236-a5db-4f47da3c7198"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="412c9e60-3597-42bc-8731-8dacf836f5b1"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="da58d595-a0be-4dfe-918d-977e386485e8"
+            name="Request Card Data (CardID)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a7eaa6bb-22bf-4b2b-8456-f2687ea08b6e"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4fa6a6db-0890-423a-a6bc-f0e511f83415"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5851366b-08d7-4542-a711-30e869287b71"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d7a859b4-7cc7-46a5-ae6a-52a529b95e9f"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="dd926e0c-5f41-495e-ab64-407ca57370ab"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="4ef8b7dc-3df1-47e1-b4ef-d865a79522f7"
+            name="Card Data for (ID)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7f9be561-9389-46d9-9a9f-b6692ff2e61a"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4c02d3f1-88d4-44e8-b51d-e3c8dd133013"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="38d505c9-eb28-450a-b6e6-5fbfa37546e3"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="20c17a35-e726-4f27-bdfc-e93375b708b0"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ab9ca260-709a-4ec5-9f7f-07ab166a16a1"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9fc50d0c-9477-40b1-878d-1ba38937de5c"
+            name="Add To Cart"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a724e54d-90f2-4be3-a786-5cddf744a689"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="68cb7887-48c8-47d0-8698-81d8e58d137a"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="ea210a76-dce9-4ecb-9134-14cfe0c8b54d"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7190d8fb-d9fe-4fb5-ad23-1eb62d46027f"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e48b25a6-0e32-4e66-ba35-10cbd1846dc1"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="7bb9bed3-30c6-484b-b736-906f46608577"
+            name="Checkout"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="98a19171-7375-4204-85c7-8631fc4cad4f"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="85038c69-5937-41cc-9863-e688a2d4b746"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5f339a8b-bd6d-4e34-99b9-375b7c6da454"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b47db240-f2fc-41df-a2cd-9fb00dffcdf5"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="80894568-4ab2-43d3-8cc7-278277502904"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6e2f0871-846b-485c-9eeb-43d3a5aef586"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a51a1c32-5fba-49cd-978c-4c0c6ea29f18"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="fbb355fd-dffb-4d50-aa63-af6458ecbd6b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e50e576e-5715-47e9-b42a-39f3ac9e7f78"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c66ab4db-5b20-44b4-bfe1-80c3f5f1e382"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8cbd231f-4859-45fb-bafb-7468b7f2f783"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="47ddc417-f73f-4de3-9944-6408eca9dda7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="068cb290-acd5-4d51-af5b-0263dea0ce3b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="cfaeb17c-488f-4b15-8e35-099b1c3b0d80"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ee31bf2c-4656-4f6b-bc88-6b581bb83fc8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="333daf8d-aa50-4ca7-8696-c3d4e6ee0126"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0f26173c-ee0f-4118-923c-2e08d3b9bbe5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="baf872a2-52eb-420c-905c-c35d3ebf9318"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="87d69fef-bd22-4797-8b85-c66b8b22d506"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="424c2aef-cf61-4660-a77e-0b84ed59f68b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="19ef2490-da25-40c0-b6c1-c7337854495d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="c992b42a-387b-4dd3-8f84-cff8fa591c10"
+        name="OrderFullfillment"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="b33272d1-0417-419d-aa51-ccf3e7704247">
+            <body>If duplicate, drop message..</body>
+          </comment>
+          <comment
+            Id="e15ea6aa-08e5-4803-bc11-f3567ef10fda">
+            <body>Polling interval N seconds</body>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="61c3939a-0a03-4644-9d8d-2723171b3a7c"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="ecfac722-93d7-4d79-b066-bbeb2dfe159e"
+                LastKnownName="PGP Card Listener"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="57ff631b-9266-4112-b191-d716903b2594"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="7a12038f-be8c-4d2d-8c72-a66e59490b16"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="b66b9a98-e28c-407d-b680-bb85a99ca242"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a5118347-d9a6-4285-ad31-3b627ba3e048"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="dd051088-ea5d-4e1a-b306-012675106ebf"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="80d6a112-8edc-4b15-9be0-13d3b305b0b7"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ea6b42d6-052d-4a3c-aeb3-b7ec2247f2e5"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="79eb8d74-38d4-4aab-9d82-15f6a9afad5f"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="7a12038f-be8c-4d2d-8c72-a66e59490b16"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f37fa1e4-bef2-4021-b295-0235031417b4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ecfac722-93d7-4d79-b066-bbeb2dfe159e"
+                LastKnownName="PGP Card Listener"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c18d55d7-4eb6-49bf-9a8f-ee33bb10795e"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="c236662a-b1d7-4d78-9a17-95a225792e3b"
+                LastKnownName="Google Cart"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b66b9a98-e28c-407d-b680-bb85a99ca242"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="ecfac722-93d7-4d79-b066-bbeb2dfe159e"
+                LastKnownName="PGP Card Listener"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="92ee81f5-d5ef-4cae-9713-9b50016a4ca5"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="9fe5ea01-caf4-47c2-8c70-db913cd0944d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="8989d2c2-a220-46f7-b107-a50add3c86c8"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="cda6fd8f-db0f-410b-b26d-9805a6ef24e0"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="08d0842c-3214-4c7c-a0f7-91638a35ea2d"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="8989d2c2-a220-46f7-b107-a50add3c86c8"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="34bce93f-5eb8-4e82-b20b-55e8c90132b8"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a5118347-d9a6-4285-ad31-3b627ba3e048"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="ecfac722-93d7-4d79-b066-bbeb2dfe159e"
+                LastKnownName="PGP Card Listener"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cda6fd8f-db0f-410b-b26d-9805a6ef24e0"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="08d0842c-3214-4c7c-a0f7-91638a35ea2d"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dd051088-ea5d-4e1a-b306-012675106ebf"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="ecfac722-93d7-4d79-b066-bbeb2dfe159e"
+                LastKnownName="PGP Card Listener"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="9fe5ea01-caf4-47c2-8c70-db913cd0944d"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="644fe1bc-f233-4bab-bb5d-3263e38e9058"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="50e75078-dc98-4010-bbbb-23c10ad1e60b"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="6feb2cd0-39bb-4cd4-911b-9aa04bbf6c98"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="429cf381-64be-4800-97da-20f73f59caa8"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="37a439e3-92df-46ce-bde0-ccdf5c884c21"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c71dd7c2-190e-4edb-b35e-f4210f5e32c4"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="429cf381-64be-4800-97da-20f73f59caa8"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="944356b0-df40-4bfe-a82a-14f5a8e3ff18"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="37a439e3-92df-46ce-bde0-ccdf5c884c21"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="80d6a112-8edc-4b15-9be0-13d3b305b0b7"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="ecfac722-93d7-4d79-b066-bbeb2dfe159e"
+                LastKnownName="PGP Card Listener"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c71dd7c2-190e-4edb-b35e-f4210f5e32c4"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ea6b42d6-052d-4a3c-aeb3-b7ec2247f2e5"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="ecfac722-93d7-4d79-b066-bbeb2dfe159e"
+                LastKnownName="PGP Card Listener"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="6feb2cd0-39bb-4cd4-911b-9aa04bbf6c98"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4b23b090-6207-4c64-9abc-82b46eca909e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ed2cbe3d-88e8-462b-a6ad-3f0c0ebb7703"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="c236662a-b1d7-4d78-9a17-95a225792e3b"
+                LastKnownName="Google Cart"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="79eb8d74-38d4-4aab-9d82-15f6a9afad5f"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="ecfac722-93d7-4d79-b066-bbeb2dfe159e"
+                LastKnownName="PGP Card Listener"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="5db4e8d9-23ea-4325-a29e-c262ae05921f"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="9eae8432-5c59-4258-9582-8558b9d14414"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="8c2e1aaf-82df-45d2-8aac-ca5e3ecadc2d"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="b7281ed4-3a0a-4e51-8cdf-c807dc23937b"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f5179179-ff43-43ad-ad27-93fbd416ab4b"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="57ff631b-9266-4112-b191-d716903b2594"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e8bc7728-2b30-46fd-a3b5-893003986eb9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="ecfac722-93d7-4d79-b066-bbeb2dfe159e"
+                LastKnownName="PGP Card Listener"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="8c2e1aaf-82df-45d2-8aac-ca5e3ecadc2d"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="12886947-d62b-4be9-bf03-f4ca7f524684"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b7281ed4-3a0a-4e51-8cdf-c807dc23937b"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cc9f8733-3a5a-4cf1-babc-16114829e73f"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="92391846-ad15-413a-a295-a8b5cdca569e"
+                LastKnownName="PGP Card Processor"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="edbd08b4-d6bf-418d-bf75-4e299073112b"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="92391846-ad15-413a-a295-a8b5cdca569e"
+                LastKnownName="PGP Card Processor"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f5179179-ff43-43ad-ad27-93fbd416ab4b"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="9eae8432-5c59-4258-9582-8558b9d14414"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4121b0f0-a490-4f8e-ac83-f62bc670f87f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="9d2d16c5-f09a-45b4-bb43-0f2f41cfbe68"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c9ebdcf9-d7a1-4077-aa1d-ba90d5cb3a1b"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="283b3603-f3c1-4fbc-b9c3-723ebf783612"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="777475aa-d705-4f38-89f8-2e719adf4ff9"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="9043a02a-fa66-4094-b315-251ae729bb98"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="283b3603-f3c1-4fbc-b9c3-723ebf783612"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="2e123dd0-2ea5-43fe-99fe-0b286a6c8aea"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5cfc9fff-cbe5-4896-879d-3648c13a9c85"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="92391846-ad15-413a-a295-a8b5cdca569e"
+                LastKnownName="PGP Card Processor"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="777475aa-d705-4f38-89f8-2e719adf4ff9"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9043a02a-fa66-4094-b315-251ae729bb98"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="09392ed4-b533-424a-93fc-5e1f67aa51ca"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="92391846-ad15-413a-a295-a8b5cdca569e"
+                LastKnownName="PGP Card Processor"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c9ebdcf9-d7a1-4077-aa1d-ba90d5cb3a1b"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9118d4bf-5393-4a0f-996a-0bd3393ffeb7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <combinedFragment
+            Id="b7fe5a0c-2683-424b-8460-b3fb10db5437"
+            name="CombinedFragment1"
+            interactionOperator="Loop">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="92391846-ad15-413a-a295-a8b5cdca569e"
+                LastKnownName="PGP Card Processor"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand
+                Id="a2894732-9ff3-4e34-a18c-5ce156677e2e"
+                name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker
+                    Id="92391846-ad15-413a-a295-a8b5cdca569e"
+                    LastKnownName="PGP Card Processor"
+                    LastKnownLocation="PGPModelingProject.uml" />
+                  <lifelineMoniker
+                    Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                    LastKnownName="PGP Database"
+                    LastKnownLocation="PGPModelingProject.uml" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint
+                    Id="d76427ff-a75d-4f34-90d4-5e064c9632dc"
+                    guardText="send each card in order">
+                    <maxInt>
+                      <literalString
+                        Id="977246a3-7258-4ad8-abbb-12bbd6344b08"
+                        name="LiteralString1" />
+                    </maxInt>
+                    <minInt>
+                      <literalString
+                        Id="f9298399-cf5f-4929-bde0-9e98958887fb"
+                        name="LiteralString2" />
+                    </minInt>
+                  </interactionConstraint>
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker
+                    Id="dee2d1be-a84c-47d7-82e6-6207565239eb"
+                    LastKnownName="OperandOccurrenceSpecification13"
+                    LastKnownLocation="PGPModelingProject.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="4ac604b1-0f27-4a6b-965d-243ffc35348a"
+                    LastKnownName="OperandOccurrenceSpecification14"
+                    LastKnownLocation="PGPModelingProject.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="ee6e5596-bba6-4463-9957-3e7a7e9ad154"
+                    LastKnownName="OperandOccurrenceSpecification15"
+                    LastKnownLocation="PGPModelingProject.uml" />
+                  <operandOccurrenceSpecificationMoniker
+                    Id="f7a401bb-f45b-48a7-ae1c-70757afe1a1e"
+                    LastKnownName="OperandOccurrenceSpecification16"
+                    LastKnownLocation="PGPModelingProject.uml" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification
+            Id="dee2d1be-a84c-47d7-82e6-6207565239eb"
+            name="OperandOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="ee6e5596-bba6-4463-9957-3e7a7e9ad154"
+            name="OperandOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="92391846-ad15-413a-a295-a8b5cdca569e"
+                LastKnownName="PGP Card Processor"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="1122aef9-dc18-4b8c-8cf1-18d4091f3cb5"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="5d30f589-cb6f-41c7-8d04-d5130bb484f6"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ddfa4839-db54-4d57-84b9-ae384e8b12aa"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="da646187-182c-486e-b0df-04495c7995d4"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6b247f7a-716e-4d38-9d43-4fe36e9d7918"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="ddfa4839-db54-4d57-84b9-ae384e8b12aa"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="91667fa6-b90e-4c3d-98f8-b26b1fb43137"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="da646187-182c-486e-b0df-04495c7995d4"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8b2b13cb-54bc-4791-9efc-51e2cdae431b"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="92391846-ad15-413a-a295-a8b5cdca569e"
+                LastKnownName="PGP Card Processor"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7bc853f1-df16-49da-aa2c-48db5c0f6124"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="92391846-ad15-413a-a295-a8b5cdca569e"
+                LastKnownName="PGP Card Processor"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6b247f7a-716e-4d38-9d43-4fe36e9d7918"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="5d30f589-cb6f-41c7-8d04-d5130bb484f6"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4b42cb8b-c1a5-473a-8cad-253dbf43c5c8"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="f7a401bb-f45b-48a7-ae1c-70757afe1a1e"
+            name="OperandOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="92391846-ad15-413a-a295-a8b5cdca569e"
+                LastKnownName="PGP Card Processor"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="4ac604b1-0f27-4a6b-965d-243ffc35348a"
+            name="OperandOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="9261e274-074c-4a8b-b4bf-9e9a7464bb4e"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="01f8f68a-25de-4887-8f63-edd12925b7ba"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="4afd92b6-feb1-406d-8d0c-df0aa8882676"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="17e7c875-1017-4e0b-b452-f7cd8c7f4561"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ca65e676-910d-4709-be28-398c7ddb4162"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="4afd92b6-feb1-406d-8d0c-df0aa8882676"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0b5b9be2-ef70-4a8f-a782-6f6b66fca5ea"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="17e7c875-1017-4e0b-b452-f7cd8c7f4561"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bba62979-cd9c-478f-bb82-56fe428b4d0d"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="92391846-ad15-413a-a295-a8b5cdca569e"
+                LastKnownName="PGP Card Processor"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ca65e676-910d-4709-be28-398c7ddb4162"
+            name="MessageOccurrenceSpecification31">
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f76cdba8-bc6f-454d-b719-f1bc2f173622"
+            name="MessageOccurrenceSpecification32">
+            <covered>
+              <lifelineMoniker
+                Id="92391846-ad15-413a-a295-a8b5cdca569e"
+                LastKnownName="PGP Card Processor"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="01f8f68a-25de-4887-8f63-edd12925b7ba"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f3d6a545-04d8-4278-b01b-87b6968739b1"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="PGPModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+                LastKnownName="PGP Database"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="c236662a-b1d7-4d78-9a17-95a225792e3b"
+            name="Google Cart"
+            isActor="false"
+            lifelineDisplayName="Google Cart">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="c18d55d7-4eb6-49bf-9a8f-ee33bb10795e"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ed2cbe3d-88e8-462b-a6ad-3f0c0ebb7703"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="ecfac722-93d7-4d79-b066-bbeb2dfe159e"
+            name="PGP Card Listener"
+            isActor="false"
+            lifelineDisplayName="PGP Card Listener">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="7a12038f-be8c-4d2d-8c72-a66e59490b16"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="57ff631b-9266-4112-b191-d716903b2594"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="92391846-ad15-413a-a295-a8b5cdca569e"
+            name="PGP Card Processor"
+            isActor="false"
+            lifelineDisplayName="PGP Card Processor">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="cc9f8733-3a5a-4cf1-babc-16114829e73f"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="edbd08b4-d6bf-418d-bf75-4e299073112b"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5cfc9fff-cbe5-4896-879d-3648c13a9c85"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="09392ed4-b533-424a-93fc-5e1f67aa51ca"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="ee6e5596-bba6-4463-9957-3e7a7e9ad154"
+                LastKnownName="OperandOccurrenceSpecification15"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8b2b13cb-54bc-4791-9efc-51e2cdae431b"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7bc853f1-df16-49da-aa2c-48db5c0f6124"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="f7a401bb-f45b-48a7-ae1c-70757afe1a1e"
+                LastKnownName="OperandOccurrenceSpecification16"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bba62979-cd9c-478f-bb82-56fe428b4d0d"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f76cdba8-bc6f-454d-b719-f1bc2f173622"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="63d3e2f1-26e6-4378-8b57-292a23c2a793"
+            name="PGP Database"
+            isActor="false"
+            lifelineDisplayName="PGP Database">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="8989d2c2-a220-46f7-b107-a50add3c86c8"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="9fe5ea01-caf4-47c2-8c70-db913cd0944d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="429cf381-64be-4800-97da-20f73f59caa8"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="6feb2cd0-39bb-4cd4-911b-9aa04bbf6c98"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="8c2e1aaf-82df-45d2-8aac-ca5e3ecadc2d"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="9eae8432-5c59-4258-9582-8558b9d14414"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="283b3603-f3c1-4fbc-b9c3-723ebf783612"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c9ebdcf9-d7a1-4077-aa1d-ba90d5cb3a1b"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="dee2d1be-a84c-47d7-82e6-6207565239eb"
+                LastKnownName="OperandOccurrenceSpecification13"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ddfa4839-db54-4d57-84b9-ae384e8b12aa"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5d30f589-cb6f-41c7-8d04-d5130bb484f6"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="4ac604b1-0f27-4a6b-965d-243ffc35348a"
+                LastKnownName="OperandOccurrenceSpecification14"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="4afd92b6-feb1-406d-8d0c-df0aa8882676"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="PGPModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="01f8f68a-25de-4887-8f63-edd12925b7ba"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="8df76c10-9022-4967-bb39-c51ba7826e31"
+            name="New Order Processed"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c18d55d7-4eb6-49bf-9a8f-ee33bb10795e"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b66b9a98-e28c-407d-b680-bb85a99ca242"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f756b67b-3977-47af-afa2-75d72a878d52"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="79eb8d74-38d4-4aab-9d82-15f6a9afad5f"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ed2cbe3d-88e8-462b-a6ad-3f0c0ebb7703"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="55b908d6-5bfe-48b7-a2c5-60e1bd9ba3f3"
+            name="Check Duplicate?"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a5118347-d9a6-4285-ad31-3b627ba3e048"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cda6fd8f-db0f-410b-b26d-9805a6ef24e0"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="75a55e77-c77f-442b-b158-6ef1f9972eb0"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="08d0842c-3214-4c7c-a0f7-91638a35ea2d"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="dd051088-ea5d-4e1a-b306-012675106ebf"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f1377467-8dab-4098-8619-ca4f08025204"
+            name="Persist Order Detail"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="80d6a112-8edc-4b15-9be0-13d3b305b0b7"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="37a439e3-92df-46ce-bde0-ccdf5c884c21"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2f1d66b8-af54-4183-af7e-74ef86ede04b"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c71dd7c2-190e-4edb-b35e-f4210f5e32c4"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ea6b42d6-052d-4a3c-aeb3-b7ec2247f2e5"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="fc6bbd26-add6-410d-b7f4-a1121d0e2361"
+            name="Fetch Unprocessed Order Detail"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cc9f8733-3a5a-4cf1-babc-16114829e73f"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b7281ed4-3a0a-4e51-8cdf-c807dc23937b"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c0948fe0-ace3-45cc-93fb-6b89fd26e46c"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f5179179-ff43-43ad-ad27-93fbd416ab4b"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="edbd08b4-d6bf-418d-bf75-4e299073112b"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="dc7a9a97-5b97-4ef1-a780-74df480ed8cd"
+            name="Parse Card Detail"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5cfc9fff-cbe5-4896-879d-3648c13a9c85"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="777475aa-d705-4f38-89f8-2e719adf4ff9"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5359d1ac-7158-45c9-8258-43393e8f0e61"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9043a02a-fa66-4094-b315-251ae729bb98"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="09392ed4-b533-424a-93fc-5e1f67aa51ca"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e0777312-cfa4-4c16-841f-1ab9f3b776e2"
+            name="Send Card via Email"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8b2b13cb-54bc-4791-9efc-51e2cdae431b"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="da646187-182c-486e-b0df-04495c7995d4"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="7390e975-65dd-4e6f-a708-f265bf5312e7"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6b247f7a-716e-4d38-9d43-4fe36e9d7918"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7bc853f1-df16-49da-aa2c-48db5c0f6124"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c42e9b9f-c65c-4b93-a55f-b72469a87632"
+            name="Mark Order Processed"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bba62979-cd9c-478f-bb82-56fe428b4d0d"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="17e7c875-1017-4e0b-b452-f7cd8c7f4561"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="05e8134c-1ae1-441c-a94c-5717dd3018ce"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ca65e676-910d-4709-be28-398c7ddb4162"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f76cdba8-bc6f-454d-b719-f1bc2f173622"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="PGPModelingProject.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f37fa1e4-bef2-4021-b295-0235031417b4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e8bc7728-2b30-46fd-a3b5-893003986eb9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="34bce93f-5eb8-4e82-b20b-55e8c90132b8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="644fe1bc-f233-4bab-bb5d-3263e38e9058"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="944356b0-df40-4bfe-a82a-14f5a8e3ff18"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4b23b090-6207-4c64-9abc-82b46eca909e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="12886947-d62b-4be9-bf03-f4ca7f524684"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4121b0f0-a490-4f8e-ac83-f62bc670f87f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="2e123dd0-2ea5-43fe-99fe-0b286a6c8aea"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9118d4bf-5393-4a0f-996a-0bd3393ffeb7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="91667fa6-b90e-4c3d-98f8-b26b1fb43137"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4b42cb8b-c1a5-473a-8cad-253dbf43c5c8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0b5b9be2-ef70-4a8f-a782-6f6b66fca5ea"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f3d6a545-04d8-4278-b01b-87b6968739b1"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

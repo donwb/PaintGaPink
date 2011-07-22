@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PgpModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="PgpModelStoreContainer">
+    <EntitySet Name="Card" EntityType="PgpModel.Store.Card" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CardShippingInfo" EntityType="PgpModel.Store.CardShippingInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CardStyle" EntityType="PgpModel.Store.CardStyle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MailSettings" EntityType="PgpModel.Store.MailSettings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProcessedCard" EntityType="PgpModel.Store.ProcessedCard" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Card_CardStyle" Association="PgpModel.Store.FK_Card_CardStyle">
+      <End Role="CardStyle" EntitySet="CardStyle" />
+      <End Role="Card" EntitySet="Card" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CardShippingInfo_Card" Association="PgpModel.Store.FK_CardShippingInfo_Card">
+      <End Role="Card" EntitySet="Card" />
+      <End Role="CardShippingInfo" EntitySet="CardShippingInfo" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Card">
+    <Key>
+      <PropertyRef Name="CardId" />
+    </Key>
+    <Property Name="CardId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CardStyleId" Type="int" Nullable="false" />
+    <Property Name="SenderName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="SenderEmail" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="RecipientName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="RecipientEmail" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Greeting" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Message" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="IsSent" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CardShippingInfo">
+    <Key>
+      <PropertyRef Name="CardShippingInfoId" />
+    </Key>
+    <Property Name="CardShippingInfoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CardId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Address1" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Address2" Type="varchar" MaxLength="200" />
+    <Property Name="City" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="State" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="Zip" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CardStyle">
+    <Key>
+      <PropertyRef Name="CardStyleId" />
+    </Key>
+    <Property Name="CardStyleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CardName" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="ImageUrl" Type="varchar" Nullable="false" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="MailSettings">
+    <Key>
+      <PropertyRef Name="MailSettingsId" />
+    </Key>
+    <Property Name="MailSettingsId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FromName" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="FromEmail" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="CC" Type="varchar" MaxLength="500" />
+    <Property Name="SmtpServer" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Subject" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="Body" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="PickupURL" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="EmailAccountName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="EmailAccountPassword" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Port" Type="int" Nullable="false" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProcessedCard">
+    <Key>
+      <PropertyRef Name="ProcessedCardId" />
+    </Key>
+    <Property Name="ProcessedCardId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RawData" Type="varchar(max)" Nullable="false" />
+    <Property Name="Serial" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Processed" Type="bit" />
+  </EntityType>
+  <Association Name="FK_Card_CardStyle">
+    <End Role="CardStyle" Type="PgpModel.Store.CardStyle" Multiplicity="1" />
+    <End Role="Card" Type="PgpModel.Store.Card" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CardStyle">
+        <PropertyRef Name="CardStyleId" />
+      </Principal>
+      <Dependent Role="Card">
+        <PropertyRef Name="CardStyleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CardShippingInfo_Card">
+    <End Role="Card" Type="PgpModel.Store.Card" Multiplicity="1" />
+    <End Role="CardShippingInfo" Type="PgpModel.Store.CardShippingInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Card">
+        <PropertyRef Name="CardId" />
+      </Principal>
+      <Dependent Role="CardShippingInfo">
+        <PropertyRef Name="CardId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

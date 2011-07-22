@@ -1,0 +1,5 @@
+C:\Users\donwb\Documents\My Dropbox\dev\PaintGeorgiaPink\PaintGeorgiaPink\bin\PaintGeorgiaPink.dll
+C:\Users\donwb\Documents\My Dropbox\dev\PaintGeorgiaPink\PaintGeorgiaPink\bin\PaintGeorgiaPink.pdb
+C:\Users\donwb\Documents\My Dropbox\dev\PaintGeorgiaPink\PaintGeorgiaPink\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\donwb\Documents\My Dropbox\dev\PaintGeorgiaPink\PaintGeorgiaPink\obj\Debug\PaintGeorgiaPink.dll
+C:\Users\donwb\Documents\My Dropbox\dev\PaintGeorgiaPink\PaintGeorgiaPink\obj\Debug\PaintGeorgiaPink.pdb

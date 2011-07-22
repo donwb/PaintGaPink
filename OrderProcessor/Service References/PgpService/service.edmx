@@ -1,0 +1,78 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+    <Schema Namespace="PgpModel" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityType Name="Card">
+        <Key>
+          <PropertyRef Name="CardId" />
+        </Key>
+        <Property Name="CardId" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CardStyleId" Type="Edm.Int32" Nullable="false" />
+        <Property Name="SenderName" Type="Edm.String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+        <Property Name="SenderEmail" Type="Edm.String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+        <Property Name="RecipientName" Type="Edm.String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+        <Property Name="RecipientEmail" Type="Edm.String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+        <Property Name="Greeting" Type="Edm.String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+        <Property Name="Message" Type="Edm.String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+        <Property Name="IsSent" Type="Edm.Boolean" Nullable="false" />
+        <NavigationProperty Name="CardStyle" Relationship="PgpModel.FK_Card_CardStyle" FromRole="Card" ToRole="CardStyle" />
+      </EntityType>
+      <EntityType Name="CardStyle">
+        <Key>
+          <PropertyRef Name="CardStyleId" />
+        </Key>
+        <Property Name="CardStyleId" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="CardName" Type="Edm.String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+        <Property Name="ImageUrl" Type="Edm.String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+        <NavigationProperty Name="Cards" Relationship="PgpModel.FK_Card_CardStyle" FromRole="CardStyle" ToRole="Card" />
+      </EntityType>
+      <EntityType Name="ProcessedCard">
+        <Key>
+          <PropertyRef Name="ProcessedCardId" />
+        </Key>
+        <Property Name="ProcessedCardId" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="RawData" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+        <Property Name="Serial" Type="Edm.String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+        <Property Name="Processed" Type="Edm.Boolean" Nullable="true" />
+      </EntityType>
+      <EntityType Name="MailSetting">
+        <Key>
+          <PropertyRef Name="MailSettingsId" />
+        </Key>
+        <Property Name="MailSettingsId" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="FromName" Type="Edm.String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+        <Property Name="FromEmail" Type="Edm.String" Nullable="false" MaxLength="300" Unicode="false" FixedLength="false" />
+        <Property Name="CC" Type="Edm.String" Nullable="true" MaxLength="500" Unicode="false" FixedLength="false" />
+        <Property Name="SmtpServer" Type="Edm.String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+        <Property Name="Subject" Type="Edm.String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+        <Property Name="Body" Type="Edm.String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+        <Property Name="PickupURL" Type="Edm.String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+        <Property Name="EmailAccountName" Type="Edm.String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+        <Property Name="EmailAccountPassword" Type="Edm.String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+      </EntityType>
+      <Association Name="FK_Card_CardStyle">
+        <End Role="CardStyle" Type="PgpModel.CardStyle" Multiplicity="1" />
+        <End Role="Card" Type="PgpModel.Card" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="CardStyle">
+            <PropertyRef Name="CardStyleId" />
+          </Principal>
+          <Dependent Role="Card">
+            <PropertyRef Name="CardStyleId" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+    </Schema>
+    <Schema Namespace="NewPgpService" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityContainer Name="PgpEntities" p7:LazyLoadingEnabled="true" m:IsDefaultEntityContainer="true" xmlns:p7="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntitySet Name="Cards" EntityType="PgpModel.Card" />
+        <EntitySet Name="CardStyles" EntityType="PgpModel.CardStyle" />
+        <EntitySet Name="ProcessedCards" EntityType="PgpModel.ProcessedCard" />
+        <EntitySet Name="MailSettings" EntityType="PgpModel.MailSetting" />
+        <AssociationSet Name="FK_Card_CardStyle" Association="PgpModel.FK_Card_CardStyle">
+          <End Role="CardStyle" EntitySet="CardStyles" />
+          <End Role="Card" EntitySet="Cards" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

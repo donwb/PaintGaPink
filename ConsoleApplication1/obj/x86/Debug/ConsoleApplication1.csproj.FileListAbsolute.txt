@@ -1,0 +1,5 @@
+C:\Users\donwb\Documents\My Dropbox\dev\PaintGeorgiaPink\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\donwb\Documents\My Dropbox\dev\PaintGeorgiaPink\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\donwb\Documents\My Dropbox\dev\PaintGeorgiaPink\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\donwb\Documents\My Dropbox\dev\PaintGeorgiaPink\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\donwb\Documents\My Dropbox\dev\PaintGeorgiaPink\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb

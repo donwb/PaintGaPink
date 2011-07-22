@@ -1,0 +1,183 @@
+﻿.image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+
+h2 {
+   position: absolute;
+   top: 100px;
+   left: 0;
+   width: 100%;
+}
+
+.greeting {
+	position: absolute;
+	top: 15px;
+	left:270px;
+	width:190px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+}
+
+.friend {
+	position: absolute;
+	top: 30px;
+	left:560px;
+	width:190px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+}
+
+.message{
+	position: absolute;
+	top: 55px;
+	left:560px;
+	width:240px;
+	height:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+}
+
+.bodyText{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:small;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+.bodyBreak{
+	 margin-top:-10px
+}
+
+.imageDecoration
+{
+    border-color:Blue;
+    border:2;
+}
+
+.imageBox
+{
+   border:1px solid black;
+   padding: 1px;
+}
+
+.imageContainer
+{
+    padding:1px;
+    border: 2px solid black;
+    background-color:#a69055;
+    width: 294px;
+    height:230px;
+    margin-left:20px;
+    margin-right:20px;
+    text-align:center;
+    font-family:Georgia;
+    font-size:small;
+    color:#141919;
+}
+
+.wordyCardText
+{
+    margin-top:-10px;
+    font-size:x-small
+}
+.prev
+{
+    background-image:url('../images/arrow_left.png');
+    display:block;
+    float:left;
+    background-repeat:no-repeat;
+    background-position:left;
+    margin-top:140px;
+    width:32px;
+    height:32px;
+}
+
+.next
+{
+    display:inline-block;
+    background-image: url('../images/arrow_right.png');
+    background-repeat:no-repeat;
+    background-position:left;
+    float:right;
+    margin-top:-90px;
+    width:32px;
+    height:32px;
+}
+
+.carousel
+{
+    margin-top:10px;
+    margin-left:20px;
+    margin-bottom:15;
+}
+
+.dashedDivider
+{
+    border-bottom:3px;
+    border-bottom-style:dashed;
+    border-bottom-color:Gray;
+    margin-top:6px;
+    margin-bottom: 8px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.formBox
+{
+    width: 650px;
+    border-style: solid;
+    border-width: thin;
+    border-color: Gray;
+    border-top-width: 28px;
+    margin: auto auto auto 222px;
+}
+
+table
+{
+    width: 600px;
+    margin-top:15px;
+}
+
+tr
+{
+    margin-bottom:10px;
+}
+
+.personalize
+{
+    margin-top:-25px;
+    color:White;
+    font-family:Georgia;
+    font-weight:bold;
+}
+
+.previewImageSurround
+{
+    width: 585px;
+    border-style: double;
+    border-width: medium;
+    border-color: Gray;
+    padding-left: -10px;
+    margin: auto auto auto 250px;
+    height: 210px;
+}
+
+.greetingCardText
+{
+    font-size: small;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.carouselMain
+{
+    margin-left:10px;
+}
+
+.previewImageBox
+{
+    border-color:Blue;
+    border:22px;
+    padding:2 2 2 2;
+}
